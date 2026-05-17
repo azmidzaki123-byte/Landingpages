@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page Sekolah</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f6f9;
+      color:#333;
+    }
+
+    header{
+      background:linear-gradient(135deg,#004aad,#007bff);
+      color:white;
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    header h1{
+      font-size:48px;
+      margin-bottom:15px;
+    }
+
+    header p{
+      font-size:18px;
+      max-width:700px;
+      margin:auto;
+    }
+
+    nav{
+      background:#002b66;
+      padding:15px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#ffd700;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:50px 0;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .title h2{
+      font-size:36px;
+      color:#004aad;
+    }
+
+    .jurusan-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      padding:25px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card h3{
+      color:#004aad;
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    .card p{
+      line-height:1.6;
+      font-size:15px;
+    }
+
+    .about{
+      background:white;
+      padding:60px 20px;
+      margin-top:50px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+
+    .about h2{
+      color:#004aad;
+      margin-bottom:20px;
+    }
+
+    footer{
+      background:#002b66;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:12px 25px;
+      background:#ffd700;
+      color:#000;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SMK MAJU INDONESIA</h1>
+    <p>
+      Sekolah Kejuruan Modern dengan berbagai program keahlian unggulan
+      untuk mempersiapkan siswa menjadi generasi kreatif, profesional,
+      dan siap kerja.
+    </p>
+
+    <a href="#jurusan" class="btn">Lihat Jurusan</a>
+  </header>
+
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#jurusan">Jurusan</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section class="container" id="jurusan">
+    <div class="title">
+      <h2>7 Jurusan Unggulan</h2>
+    </div>
+
+    <div class="jurusan-grid">
+
+      <div class="card">
+        <h3>PPLG</h3>
+        <p>
+          Pengembangan Perangkat Lunak dan Gim.
+          Belajar coding, website, aplikasi, dan desain game.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>AKL</h3>
+        <p>
+          Akuntansi dan Keuangan Lembaga.
+          Fokus pada laporan keuangan, perpajakan, dan administrasi.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>MPLB</h3>
+        <p>
+          Manajemen Perkantoran dan Layanan Bisnis.
+          Mempelajari administrasi kantor modern dan pelayanan bisnis.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>DKV</h3>
+        <p>
+          Desain Komunikasi Visual.
+          Belajar desain grafis, editing, ilustrasi, dan multimedia.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>TBS</h3>
+        <p>
+          Teknik Bisnis Sepeda Motor.
+          Fokus pada perawatan, perbaikan, dan bisnis otomotif.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>BCF</h3>
+        <p>
+          Broadcasting dan Perfilman.
+          Belajar videografi, editing film, fotografi, dan produksi media.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>PM</h3>
+        <p>
+          Pemasaran.
+          Mempelajari strategi penjualan, digital marketing,
+          dan kewirausahaan.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="about" id="tentang">
+      <h2>Tentang Sekolah</h2>
+      <p>
+        SMK MAJU INDONESIA hadir untuk memberikan pendidikan berkualitas
+        dengan fasilitas modern, guru profesional, dan lingkungan belajar
+        yang nyaman untuk menciptakan lulusan terbaik.
+      </p>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <p>© 2026 SMK MAJU INDONESIA | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
